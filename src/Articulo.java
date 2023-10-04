@@ -5,6 +5,7 @@ public class Articulo {
     private String nombre;
     private String descripcion;
     private float precio;
+    private DetalleOrden detalleorden;
 
     public Articulo(float peso, String nombre, String descripcion, float precio) {
         this.peso = peso;

@@ -7,6 +7,7 @@ public class OrdenCompra {
     private String estado;
     private int cantidad;
     private DetalleOrden detalle;
+    private Cliente cliente;
 
     public OrdenCompra(Date fecha, String estado, int cantidad) {
         this.fecha = fecha;
