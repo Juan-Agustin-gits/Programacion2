@@ -9,6 +9,7 @@ public class OrdenCompra {
     private ArrayList<DetalleOrden> Detalles;
     private ArrayList<DocTributario> docTributarios;
     private ArrayList<Pago> pagos;
+    private DetalleOrden detalle;
     private Cliente cliente;
 
     public OrdenCompra(Date fecha, String estado, int cantidad) {

@@ -1,6 +1,9 @@
 package src;
 
+import java.util.ArrayList;
+
 public class Articulo {
+    private ArrayList<DetalleOrden> detalleOrden;
     private float peso;
     private String nombre;
     private String descripcion;

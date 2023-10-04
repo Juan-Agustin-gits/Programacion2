@@ -7,6 +7,7 @@ public class Cliente {
     private String rut;
     private Direccion direccionDelCliente;
     private ArrayList<OrdenCompra> ordenCompras;
+    private OrdenCompra orden;
 
     public Cliente(String nombre, String rut) {
         this.nombre = nombre;

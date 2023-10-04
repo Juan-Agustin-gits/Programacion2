@@ -2,15 +2,19 @@ package src;
 
 import java.util.Date;
 
-public class Pago {
+public class Pago{
     private float monto;
     private Date fecha;
     protected Efectivo efectivo;
     protected Transferencia transferencia;
     private OrdenCompra ordenCompra;
     protected Tarjeta tarjeta;
-    public Pago(float monto) {
+    public Pago(float monto) { //posible cambio
         this.monto = monto;
+    }
+
+    public Pago() {//intelij me propuso otro constructor (que servirá para tarjeta y transferencia)
+
     }
 
     public void setMonto(float monto) {
