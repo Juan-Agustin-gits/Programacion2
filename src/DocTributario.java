@@ -1,4 +1,5 @@
 package src;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class DocTributario {
@@ -7,13 +8,14 @@ public class DocTributario {
     private Date fecha;
     protected Boleta boleta;
     protected Factura factura;
+    private Direccion direccion;
+    private OrdenCompra ordenCompra;
 
     public DocTributario(String numero, String rut, Date fecha) {
         this.numero = numero;
         this.rut = rut;
         this.fecha = fecha;
     }
-
     public String getNumero() {
         return numero;
     }

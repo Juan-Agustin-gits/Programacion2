@@ -7,6 +7,7 @@ public class Pago {
     private Date fecha;
     protected Efectivo efectivo;
     protected Transferencia transferencia;
+    private OrdenCompra ordenCompra;
     protected Tarjeta tarjeta;
     public Pago(float monto) {
         this.monto = monto;

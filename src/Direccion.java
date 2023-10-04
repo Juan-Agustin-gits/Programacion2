@@ -1,6 +1,11 @@
 package src;
+
+import java.util.ArrayList;
+
 public class Direccion {
     private String direccion;
+    private ArrayList<Cliente> clientes;
+    private ArrayList<DocTributario> docTributarios;
 
     public Direccion(String direccion) {
         this.direccion = direccion;

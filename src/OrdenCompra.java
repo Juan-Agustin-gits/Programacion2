@@ -1,18 +1,20 @@
 package src;
-
+import java.util.ArrayList;
 import java.util.Date;
 
 public class OrdenCompra {
     private Date fecha;
     private String estado;
     private int cantidad;
-    private DetalleOrden detalle;
+    private ArrayList<DetalleOrden> Detalles;
+    private ArrayList<DocTributario> docTributarios;
+    private ArrayList<Pago> pagos;
+    private Cliente cliente;
 
     public OrdenCompra(Date fecha, String estado, int cantidad) {
         this.fecha = fecha;
         this.estado = estado;
         this.cantidad = cantidad;
-        detalle = new DetalleOrden(cantidad);
     }
 
     public Date getFecha() {

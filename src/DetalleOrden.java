@@ -2,6 +2,7 @@ package src;
 public class DetalleOrden {
     private int cantidad;
     private Articulo articulo;
+    private OrdenCompra orden;
     private float precio = articulo.getPrecio();
 
     public DetalleOrden(int cantidad) {
