@@ -1,11 +1,13 @@
 package src;
 
+import java.util.ArrayList;
+
 public class Articulo {
+    private ArrayList<DetalleOrden> detalleOrden;
     private float peso;
     private String nombre;
     private String descripcion;
     private float precio;
-    private DetalleOrden detalleorden;
 
     public Articulo(float peso, String nombre, String descripcion, float precio) {
         this.peso = peso;
