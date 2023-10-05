@@ -17,7 +17,16 @@ public class OrdenCompra {
         this.estado = estado;
         this.cantidad = cantidad;
     }
-
+    public void addDetalle(DetalleOrden n, Pago m, DocTributario t){
+            Detalles.add(n);
+            pagos.add(m);
+            docTributarios.add(t);
+    }
+    public void removeDetalle(DetalleOrden n, Pago m, DocTributario t){
+        Detalles.remove(n);
+        pagos.remove(m);
+        docTributarios.remove(t);
+    }
     public Date getFecha() {
         return fecha;
     }

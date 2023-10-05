@@ -29,6 +29,12 @@ public class Cliente {
     public void setRut(String rut) {
         this.rut = rut;
     }
+    public void addOrdenCompra(OrdenCompra n){
+        ordenCompras.add(n);
+    }
+    public void removeOrdenCompra(OrdenCompra n){
+        ordenCompras.remove(n);
+    }
 
     @Override
     public String toString() {

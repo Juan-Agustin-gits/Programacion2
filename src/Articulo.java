@@ -15,7 +15,12 @@ public class Articulo {
         this.descripcion = descripcion;
         this.precio = precio;
     }
-
+    public void addDetalleOrden(DetalleOrden n){
+        detalleOrden.add(n);
+    }
+    public void removeDetalleOrde(DetalleOrden n){
+        detalleOrden.remove(n);
+    }
     public float getPeso() {
         return peso;
     }
