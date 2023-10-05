@@ -6,7 +6,8 @@ public class DetalleOrden {
     private float precio = articulo.getPrecio();
     protected float precioF;
 
-    public DetalleOrden(int cantidad) { //si abajo tenemos un setter este constructor puede quedar vacio
+    public DetalleOrden(int cantidad,Articulo articulo){
+        this.articulo = articulo;
         this.cantidad = cantidad;
     }
 
