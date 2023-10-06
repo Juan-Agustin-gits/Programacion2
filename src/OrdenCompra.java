@@ -7,7 +7,7 @@ public class OrdenCompra {
     private String estado;
     private ArrayList<DetalleOrden> Detalles = new ArrayList<>();
     private ArrayList<DocTributario> docTributarios = new ArrayList<>();
-    private ArrayList<Pago> pagos;
+    private ArrayList<Pago> pagos = new ArrayList<>();
     private float precioFinal;
     private float pesoTotal;
     public OrdenCompra(Date fecha, String estado) {
