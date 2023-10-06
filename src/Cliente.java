@@ -5,9 +5,8 @@ import java.util.ArrayList;
 public class Cliente {
     private String nombre;
     private String rut;
-    private Direccion direccionDelCliente;
-    private ArrayList<OrdenCompra> ordenCompras;
-    private OrdenCompra orden;
+    private Direccion direccionDelCliente = new Direccion();
+    private ArrayList<OrdenCompra> ordenCompras = new ArrayList<>();
 
     public Cliente(String nombre, String rut) {
         this.nombre = nombre;
@@ -41,6 +40,8 @@ public class Cliente {
         return "Cliente{" +
                 "nombre='" + nombre + '\'' +
                 ", rut='" + rut + '\'' +
+                ", direccionDelCliente=" + direccionDelCliente.toString() +
+                ", ordenCompras=" + ordenCompras.toString() +
                 '}';
     }
 }

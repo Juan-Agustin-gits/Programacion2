@@ -33,4 +33,15 @@ public class Pago{
         return fecha;
     }
 
+    @Override
+    public String toString() {
+        return "Pago{" +
+                "monto=" + monto +
+                ", fecha=" + fecha +
+                ", efectivo=" + efectivo.toString() +
+                ", transferencia=" + transferencia.toString() +
+                ", ordenCompra=" + ordenCompra +
+                ", tarjeta=" + tarjeta.toString() +
+                '}';
+    }
 }
