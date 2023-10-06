@@ -44,11 +44,14 @@ public class DocTributario {
     @Override
     public String toString() {
         return "DocTributario{" +
-                "numero='" + numero + '\'' +
+                "Orden=" + Orden +
+                ", numero='" + numero + '\'' +
                 ", rut='" + rut + '\'' +
                 ", fecha=" + fecha +
-                ", boleta=" + boleta.toString() +
-                ", factura=" + factura.toString() +
+                ", boleta=" + boleta +
+                ", factura=" + factura +
+                ", direccion=" + direccion +
+                ", ordenCompra=" + ordenCompra +
                 '}';
     }
 }

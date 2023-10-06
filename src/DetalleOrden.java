@@ -3,7 +3,6 @@ public class DetalleOrden {
     private Articulo articulo;
     private OrdenCompra orden;
     private int cantidad;
-    private float precio = articulo.getPrecio();
     protected float precioF;
 
     public DetalleOrden(int cantidad,Articulo articulo){
@@ -23,7 +22,7 @@ public class DetalleOrden {
 
         float precioTotal = 0;
         for(int i = 0; i < cantidad; i++) {
-            precioTotal+= precio;
+            precioTotal+= articulo.getPrecio();
         }
         precioF=precioTotal;
         return precioTotal; //precioTotal seguirá existiendo fuera del método?(pq puede servir después)
@@ -50,4 +49,13 @@ public class DetalleOrden {
         return precioSinIva;
     }
 
+    @Override
+    public String toString() {
+        return "DetalleOrden{" +
+                "articulo=" + articulo.toString() +
+                ", orden=" + orden +
+                ", cantidad=" + cantidad +
+                ", precioF=" + precioF +
+                '}';
+    }
 }

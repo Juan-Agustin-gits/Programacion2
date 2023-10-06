@@ -13,4 +13,11 @@ public class Efectivo extends Pago{
         }
         return vuelto;
     }
+
+    @Override
+    public String toString() {
+        return "Efectivo{" +
+                "monto=" + monto +
+                '}';
+    }
 }

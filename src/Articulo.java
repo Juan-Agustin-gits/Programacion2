@@ -3,7 +3,7 @@ package src;
 import java.util.ArrayList;
 
 public class Articulo {
-    private ArrayList<DetalleOrden> detalleOrden;
+    private ArrayList<DetalleOrden> detalleOrden = new ArrayList<>();
     private float peso;
     private String nombre;
     private String descripcion;
@@ -15,7 +15,12 @@ public class Articulo {
         this.descripcion = descripcion;
         this.precio = precio;
     }
-
+    public void addDetalleOrden(DetalleOrden n){
+        detalleOrden.add(n);
+    }
+    public void removeDetalleOrde(DetalleOrden n){
+        detalleOrden.remove(n);
+    }
     public float getPeso() {
         return peso;
     }
@@ -51,7 +56,8 @@ public class Articulo {
     @Override
     public String toString() {
         return "Articulo{" +
-                "peso=" + peso +
+                "detalleOrden=" + detalleOrden +
+                ", peso=" + peso +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
                 ", precio=" + precio +
