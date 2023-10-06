@@ -36,6 +36,9 @@ public class OrdenCompra {
     public void addDetalle(DetalleOrden n){
             Detalles.add(n);
     }
+    public void addPago(Pago n){
+        pagos.add(n);
+    }
     public void removeDetalle(DetalleOrden n){
         Detalles.remove(n);
     }

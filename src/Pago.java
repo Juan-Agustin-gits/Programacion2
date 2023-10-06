@@ -9,21 +9,18 @@ public class Pago{
     protected Transferencia transferencia;
     private OrdenCompra ordenCompra;
     protected Tarjeta tarjeta;
-    public Pago(float monto) { //posible cambio
+    public Pago(float monto, Date fecha) { //posible cambio
         this.monto = monto;
-    }
-
-    public Pago() {//intelij me propuso otro constructor (que servirá para tarjeta y transferencia)
-
+        this.fecha = fecha;
     }
 
     public void setMonto(float monto) {
         this.monto = monto;
-    }
+    }//por si más adelante queremos cambiar el pago
 
     public void setFecha(Date fecha) {
         this.fecha = fecha;
-    }
+    }//por si más adelante queremos cambiar la fecha de pago
 
     public float getMonto() {
         return monto;
