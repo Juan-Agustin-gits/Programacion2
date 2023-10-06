@@ -17,10 +17,9 @@ public class OrdenCompra {
         this.estado = estado;
         this.cantidad = cantidad;
     }
-    public void addDetalle(DetalleOrden n, Pago m, DocTributario t){
-            Detalles.add(n);
-            pagos.add(m);
-            docTributarios.add(t);
+    public void addDetalle(int n){
+            Detalles.add(new DetalleOrden(n));
+            pagos.add(new Pago(n));
     }
     public void removeDetalle(DetalleOrden n, Pago m, DocTributario t){
         Detalles.remove(n);
