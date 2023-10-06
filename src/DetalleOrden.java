@@ -27,6 +27,10 @@ public class DetalleOrden {
         precioF=precioTotal;
         return precioTotal; //precioTotal seguirá existiendo fuera del método?(pq puede servir después)
     }
+
+    /**
+     * @return
+     */
     public float CalcPeso(){ // calcula cual es el peso total de todos los articulos
         float PesoTotal = 0;
         float pesoDelArticulo = articulo.getPeso();
@@ -36,11 +40,19 @@ public class DetalleOrden {
         }
         return PesoTotal;
     }
+
+    /**
+     * @return
+     */
     public float CalcIVA(){ // IVA que seria el 19% del precio
 
         return (precioF * 19 )/100;
         //creo que es el iva total por lo que podríamos usar precioTotal
     }
+
+    /**
+     * @return
+     */
     public float CalcPrecioSinIVA(){
         float precioSinIva = 0;
         precioSinIva = precioF - CalcIVA();
@@ -49,6 +61,9 @@ public class DetalleOrden {
         return precioSinIva;
     }
 
+    /**
+     * @return
+     */
     @Override
     public String toString() {
         return "DetalleOrden{" +
