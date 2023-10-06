@@ -38,9 +38,9 @@ public class Cliente {
     @Override
     public String toString() {
         return "Cliente{" +
-                "nombre='" + nombre + '\'' +
-                ", rut='" + rut + '\'' +
-                ", direccionDelCliente=" + direccionDelCliente.toString() +
+                "nombre='" + nombre + '\n' +
+                ", rut='" + rut + '\n' +
+                ", direccionDelCliente=" + direccionDelCliente + '\n' +
                 ", ordenCompras=" + ordenCompras.toString() +
                 '}';
     }
